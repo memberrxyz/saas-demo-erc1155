@@ -1,0 +1,29 @@
+{
+  "name": "saas-demo-erc1155",
+  "version": "0.0.1",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/hardhat"
+    ]
+  },
+  "scripts": {
+    "account": "yarn workspace @saas-demo-erc1155/hardhat account",
+    "chain": "yarn workspace @saas-demo-erc1155/hardhat chain",
+    "fork": "yarn workspace @saas-demo-erc1155/hardhat fork",
+    "deploy": "yarn workspace @saas-demo-erc1155/hardhat deploy",
+    "verify": "yarn workspace @saas-demo-erc1155/hardhat verify",
+    "compile": "yarn workspace @saas-demo-erc1155/hardhat compile",
+    "generate": "yarn workspace @saas-demo-erc1155/hardhat generate",
+    "hardhat:lint": "yarn workspace @saas-demo-erc1155/hardhat lint",
+    "hardhat:lint-staged": "yarn workspace @saas-demo-erc1155/hardhat lint-staged",
+    "hardhat:test": "yarn workspace @saas-demo-erc1155/hardhat test",
+    "postinstall": "husky install",
+    "precommit": "lint-staged"
+  },
+  "packageManager": "yarn@3.2.3",
+  "devDependencies": {
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  }
+}
