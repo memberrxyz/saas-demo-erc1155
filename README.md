@@ -1,6 +1,6 @@
-# Memberr ERC1155
+# SAAS demo erc1155
 
-The official memberr token.
+ERC1155 demo token used to demo our saas product.
 
 ## Setup
 
@@ -32,8 +32,7 @@ yarn verify --network polygon
 
 | Network | Contract Name | Address | OpenSea |
 |---|---|---|
-| polygon | MemberrCollectible | [0xf1fe0546b8662d6e51dc760659c304135b0ff448](https://polygonscan.com/address/0xf1fe0546b8662d6e51dc760659c304135b0ff448) | [OpenSea](https://testnets.opensea.io/collection/memberr) |
-| goerli | TestCollectible3 | [0x06D238118ea4Bb3B9Eb155119431Fa853822520F](https://goerli.etherscan.io/address/0x06D238118ea4Bb3B9Eb155119431Fa853822520F) | [OpenSea](https://testnets.opensea.io/collection/memberr) |
+| polygon | MemberrCollectible | [0x00000](https://polygonscan.com/address/0x00000) | [OpenSea](https://testnets.opensea.io/collection/memberr) |
 
 ## License
 
