@@ -31,8 +31,10 @@ yarn verify --network polygon
 ## Deployments
 
 | Network | Contract Name | Address | OpenSea |
-|---|---|---|
-| polygon | MemberrCollectible | [0x00000](https://polygonscan.com/address/0x00000) | [OpenSea](https://testnets.opensea.io/collection/memberr) |
+|---|---|---|---|
+| goerli | MemberrSaasDemoToken | [0x96a88c3c087a97992007e151e337b1862abc51d8](https://goerli.etherscan.io/address/0x96a88c3c087a97992007e151e337b1862abc51d8) | [OpenSea](https://testnets.opensea.io/collection/memberr) |
+| mumbai | MemberrSaasDemoToken | [0xdc29fc5a92263806cbf245ce4ec73cf79003fc16](https://mumbai.polygonscan.com/address/0xdc29fc5a92263806cbf245ce4ec73cf79003fc16) | [OpenSea](https://testnets.opensea.io/collection/memberr) |
+| polygon | MemberrSaasDemoToken | [0x9e3109dEB1d6158CdA0db7b2f196aD4E443918f4](https://polygonscan.com/address/0x9e3109deb1d6158cda0db7b2f196ad4e443918f4) | [OpenSea](https://testnets.opensea.io/collection/memberr) |
 
 ## License
 
