@@ -6,13 +6,13 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
 
-contract DemoERC1155 is 
+contract MemberrSaasDemoToken is 
     ERC1155,
     ERC1155Supply,
     Ownable,
     AccessControl
 {
-    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
+    //bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant URI_SETTER_ROLE = keccak256("URI_SETTER_ROLE");
     string private _contractUri;
 
@@ -23,7 +23,7 @@ contract DemoERC1155 is
         _setContractURI(contractUri);
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(URI_SETTER_ROLE, msg.sender);
-        _grantRole(MINTER_ROLE, msg.sender);
+        //_grantRole(MINTER_ROLE, msg.sender);
     }
 
     function contractURI() public view returns (string memory) {
@@ -64,7 +64,6 @@ contract DemoERC1155 is
         bytes memory data
     )
         public
-        onlyRole(MINTER_ROLE)
     {
         _mint(to, id, amount, data);
     }
@@ -76,7 +75,6 @@ contract DemoERC1155 is
         bytes memory data
     )
         public
-        onlyRole(MINTER_ROLE)
     {
         _mintBatch(to, ids, amounts, data);
     }

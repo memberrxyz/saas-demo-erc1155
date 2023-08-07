@@ -22,10 +22,10 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   const { deploy } = hre.deployments;
   console.log({ deployer });
 
-  const contractUri = "https://TODO/contract_info.json";
-  const tokenUri = "https://TODO/{id}.json";
+  const contractUri = "https://staging.memberr.xyz/collectibles/saas-demo/metadata/contract_info.json";
+  const tokenUri = "https://staging.memberr.xyz/collectibles/saas-demo/metadata/{id}.json";
 
-  await deploy("DemoCollectible", {
+  await deploy("MemberrSaasDemoToken", {
     from: deployer,
     args: [contractUri, tokenUri],
     log: true,
@@ -35,11 +35,11 @@ const deployYourContract: DeployFunction = async function (hre: HardhatRuntimeEn
   });
 
   // get the deployed contract
-  //const MemberrCollectible = await hre.ethers.getContract("MemberrCollectible", deployer);
+  //const MemberrSaasDemoToken = await hre.ethers.getContract("MemberrSaasDemoToken", deployer);
 };
 
 export default deployYourContract;
 
 // Tags are useful if you have multiple deploy files and only want to run one of them.
 // e.g. yarn deploy --tags YourContract
-deployYourContract.tags = ["DemoERC1155"];
+deployYourContract.tags = ["MemberrSaasDemoToken"];
